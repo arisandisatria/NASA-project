@@ -11,12 +11,16 @@
     "client": "npm start --prefix ./client",
     "watch": "start npm run server & start npm run client",
     "deploy": "npm run build --prefix client && npm start --prefix server",
+    "deploy-cluster": "npm run build --prefix client && npm run cluster --prefix server",
     "test": "npm run test --prefix server && npm run test --prefix client"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "mongoose": "^8.5.0",
     "morgan": "^1.10.0"
   }
 }
